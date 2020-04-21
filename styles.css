@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.6s;
+}
+.blue {
+    color: rgb(94, 99, 235);
+}
+
+#main-content {
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+#header .header__title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+form input {
+    display:block;
+    width: 100%;
+    padding: 0.7rem 0.4rem;
+    margin-bottom: 1.3rem;
+}
+form label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="submit"] {
+    border: 0;
+    cursor: pointer;
+    
+    display: block;
+    background-color: rgb(94, 99, 235);
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 0.6rem 0;
+    text-align: center;
+}
+form #read {
+    display: inline-block;
+    width: 30px;
+   
+}
+ 
+tr,th,td,thead,tbody {
+    display: block;
+}
+ 
+table {
+    margin-top: 2rem;
+    display: block;
+    border-collapse: collapse;
+}
+table,tr {
+      border: 1px solid #777;
+}
+ 
+table th, td {
+    display: inline-block;
+    width: 24%;
+    text-align: left;
+    padding: 1rem;
+}
+table tbody tr:nth-child(even) {
+    background-color: rgb(209, 204, 204);
+}
+table .remove {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: red;
+    color: #fff;
+    padding: 0.3rem;
+    text-align: right;
+    cursor: pointer;
+}
+table th,td{
+    text-align: center;
+}
+
+table .right {
+    text-align: right;
+}
+
+table tr {
+    display: flex;
+    justify-content: space-around
+}
+/* dynamically added classes */
+.alert {
+    font-family: 'Courier New', Courier, monospace,sans-serif;
+    padding: 2rem 3rem;
+    color: #fff;
+    font-weight: 900;
+    font-size: 1.2rem;   
+    margin: 1rem 0; 
+   
+}
+.alert.alert-danger {
+    background-color: red;
+}
+.alert.alert-success {
+    background-color: green;
+}
+ 
