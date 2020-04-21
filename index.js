@@ -55,7 +55,7 @@ Storage.prototype.setBooksToStore = function(myLibrary){
          <td class="right"><span class="remove">X</span></td>
     `
     tableBody.appendChild(tr);
-    this.alert(`${book.title} by ${book.author} is added`, 'success')
+     
     
 }
 UI.prototype.alert = function(message,className){
@@ -93,8 +93,10 @@ UI.prototype.deleteFromBookList = function(){
  
  
  function load(){
+     
     new UI().displayBooks();
     new UI().deleteFromBookList()
+   
  }
  document.addEventListener('DOMContentLoaded',load());
 
@@ -112,35 +114,20 @@ function addBookToLibrary(e) {
   } else {
       myLibrary.push(book);
       book.setBooksToStore(myLibrary);
+      book.alert(`${book.title} by ${book.author} added`,'success');
       book.render(book);
      
       book.deleteFromBookList();
       
   }
-  
-  
-
-  
-//   render();
-//   removeFromUi(document.querySelectorAll('.remove'))
-   
+ 
   title.value = '';
   author.value = '';
   pages.value = '';
  
 }
 
-// function render(){
-       
-// }
-// function removeFromUi(removeButtons){
-//     removeButtons.forEach(removeBtn => removeBtn.addEventListener('click',(e)=>{
-//         if(e.target.classList.contains('remove')){
-//             e.target.parentElement.parentElement.style.display = 'none'
-//         }
-//     }))
-// }
-
+ 
  
 
  
