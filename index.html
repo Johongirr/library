@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Vanilla Book List App</title>
+</head>
+<body>
+    
+    <main id="main-content">
+        <header id="header">
+            <h1 class="header__title">
+                My<span class="blue">Book</span>List
+            </h1>
+        </header>
+        <section id="form-container">
+            <form>
+                <label for="title">Title</label>
+                <input type="text" class="user-input" id="title" required>
+                <label for="author">Author</label>
+                <input type="text" class="user-input" id="author" required>
+                <label for="isbn">Pages</label>
+                <input type="number" class="user-input" id="pages" required>
+                <input type="checkbox" id="read">
+                <label for="read">Have you read this book?</label>
+                <input type="submit" value="Add Book">
+            </form>
+        </section>
+        <footer id="book-list-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Title</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">Pages</th>
+                        <th scope="col"></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+                <tbody>
+                     
+                    
+                </tbody>
+            </table>
+        </footer>
+    </main>
+    <script src="index.js" async></script>
+</body>
+</html>
