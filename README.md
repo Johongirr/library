@@ -4,7 +4,7 @@
 ### Tools used 
 HTML5 \
 CSS3 FlEXBOX \
-JAVASCRIPT (PROTOTYPE)
+JAVASCRIPT (Class)
 
 
 ### Live Demoe
